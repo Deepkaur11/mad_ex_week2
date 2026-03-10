@@ -3,9 +3,28 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={styles.board}>
+
+      <View style={styles.row}>
+        <Text style={styles.cell}>O</Text>
+        <Text style={styles.cell}></Text>
+        <Text style={styles.cell}>O</Text>
+      </View>
+
+      <View style={styles.row}>
+        <Text style={styles.cell}>X</Text>
+        <Text style={styles.cell}>X</Text>
+        <Text style={styles.cell}>O</Text>
+      </View>
+
+      <View style={styles.row}>
+        <Text style={styles.cell}>X</Text>
+        <Text style={styles.cell}></Text>
+        <Text style={styles.cell}>O</Text>
+      </View>
+
       <StatusBar style="auto" />
+
     </View>
   );
 }
@@ -13,8 +32,33 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center"
   },
+  
+   board: {
+  width: 320,
+  height: 320,
+  backgroundColor: "yellow",
+  borderWidth: 3,
+  justifyContent: "center",
+  alignItems: "center"
+},
+
+  row: {
+    flexDirection: "row"
+  },
+
+  cell: {
+    width: 100,
+    height: 100,
+    borderWidth: 2,
+    textAlign: "center",
+    textAlignVertical: "center",
+    fontSize: 40,
+    backgroundColor: "green",
+    color: "white
+    "
+  }
+
 });
