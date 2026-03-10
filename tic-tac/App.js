@@ -24,7 +24,7 @@ export default function App() {
           <Text style={styles.cell}>O</Text>
         </View>
 
-      </View>  {/* ✅ Close the board */}
+      </View>  
 
       <StatusBar style="auto" />
 
